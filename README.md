@@ -9,3 +9,4 @@ Ao final do curso o aluno estará apto a:
 - Criar gráficos com dados por meio da plataforma gráfica do R
 - Criar mapas temáticos por meio da plataforma gráfica do R
 
+O repositório contém todos os scripts das aulas práticas. 
