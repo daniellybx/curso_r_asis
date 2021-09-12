@@ -50,3 +50,4 @@ hist(esus$idade)
 #tratando com variáveis nominais
 table(sivep$CS_SEXO)
 sivep$CS_SEXO = factor(sivep$CS_SEXO, levels = c("M", "F", "I"))
+class(sivep$CS_SEXO)
