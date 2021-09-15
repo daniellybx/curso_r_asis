@@ -12,6 +12,11 @@ glimpse(esus)
 glimpse(sivep)
 
 #transformando variáveis em data 
+class(esus$dataInicioSintomas)
+class(esus$dataNotificacao)
+class(esus$idade)
+class(sivep$CS_SEXO)
+
 esus$dataInicioSintomas = as.Date(esus$dataInicioSintomas)
 esus$dataNotificacao = as.Date(esus$dataNotificacao)
 
@@ -37,8 +42,6 @@ summary(sivep$DT_SIN_PRI)
 hist(sivep$DT_SIN_PRI, breaks = 30)
 
 #ajustando idade como número 
-class(esus$idade)
-
 esus$idade = as.numeric(esus$idade)
 summary(esus$idade)
 hist(esus$idade)
