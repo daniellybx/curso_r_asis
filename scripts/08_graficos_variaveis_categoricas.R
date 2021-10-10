@@ -1,9 +1,6 @@
 # carregando pacotes
 library(tidyverse) #tratamento dos dados
 
-#install.packages("formattable")
-library(formattable) #pacote para criação de tabelas bonitas
-
 #install.packages("reshape2")
 library(reshape2)
 
@@ -15,8 +12,6 @@ source("scripts/03_aula_importando_dados.R") #realizando os tratamentos do scrip
 
 ## criando uma tabela cruzada
 tab01 = data.frame(sivep$CS_SEXO, sivep$SEM_PRI)
-tab01 = dcast(sivep.CS_SEXO ~ sivep.SEM_PRI, data = tab01) #reorganizando os dados
-
 colnames(tab01) = c("Sexo", "SEM01", "SEM02", "SEM03", "SEM04") #incluindo os títulos
 tab01$Sexo = as.character(tab01$Sexo) #alterando as categorias de sexo
 tab01$Sexo[tab01$Sexo == "M"] = "Masculino"
