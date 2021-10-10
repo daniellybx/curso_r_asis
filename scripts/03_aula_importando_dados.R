@@ -2,10 +2,8 @@
 library(tidyverse) #pacote para a manipulação dos dados
 
 ## datasets de dados 
-p = "dados/"
-
-esus = read.csv2(paste0(p, "20210601_dadosesus_df.csv")) #importando dados do esus df de 01/06/2021
-sivep = read.csv2(paste0(p, "20210823_dadossivep.csv")) #importando dados do esus df de 23/08/2021
+esus = read.csv2("dados/20210601_dadosesus_df.csv") #importando dados do esus df de 01/06/2021
+sivep = read.csv2("dados/20210823_dadossivep.csv") #importando dados do esus df de 23/08/2021
 
 ## visualizando as variáveis, linhas e colunas dos datasets
 glimpse(esus)
