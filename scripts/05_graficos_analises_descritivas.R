@@ -15,17 +15,18 @@ source("scripts/03_aula_importando_dados.R") #realizando os tratamentos do scrip
 esus$n = 1
 esus_agday = aggregate(n ~ dataInicioSintomas, data = esus, FUN = sum)
 esus_agday$dataInicioSintomas = as.Date(esus_agday$dataInicioSintomas)
+esus_agday$taxa = round(esus_agday$n/3500*10000,2)
 
 #criando um objeto ggplot
 esus_gra = ggplot(esus)
 
 ## criando um gráfico de linha simples
-ggplot(data=esus_agday, aes(x=dataInicioSintomas, y=n, group=1)) +
+ggplot(data=esus_agday, aes(x=dataInicioSintomas, y=taxa, group=1)) +
   geom_line()+
   geom_point()
 
 ## adicionando feições ao gráfico de linha
-ggplot(data=esus_agday, aes(x=dataInicioSintomas, y=n, group=1)) +
+ggplot(data=esus_agday, aes(x=dataInicioSintomas, y=taxa, group=1)) +
   geom_line(fill = "blue")+
   geom_point(colour = "blue")+
   xlab("Data de início dos sintomas")+ylab("Número de notificações")+
