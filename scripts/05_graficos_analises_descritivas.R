@@ -30,7 +30,7 @@ ggplot(data=esus_agday, aes(x=dataInicioSintomas, y=taxa, group=1)) +
   geom_line(fill = "blue")+
   geom_point(colour = "blue")+
   xlab("Data de início dos sintomas")+ylab("Número de notificações")+
-  ggtitle("Histograma de notificações por data de início de sintomas")+
+  ggtitle("Taxa de notificações por data de início de sintomas")+
   theme_bw()
 
 ## criando um boxplot simples
