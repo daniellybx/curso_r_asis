@@ -40,7 +40,7 @@ sivep_gra = ggplot(sivep)
 sivep_gra+
   geom_boxplot(aes(x = CS_SEXO, y = NU_IDADE_N))
 
-## adicionando feições ao histograma
+## adicionando feições ao boxplot
 sivep_gra+
   geom_boxplot(aes(x = CS_SEXO, y = NU_IDADE_N, fill = CS_SEXO))+
   xlab("Sexo")+ylab("Idade")+
