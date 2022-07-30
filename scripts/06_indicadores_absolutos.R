@@ -1,10 +1,10 @@
 # carregando pacotes
 library(tidyverse) #tratamento dos dados
 
-#install.packages("formattable")
+# install.packages("formattable")
 library(formattable) #pacote para criação de tabelas bonitas
 
-#install.packages("reshape2")
+# install.packages("reshape2")
 library(reshape2)
 
 ## datasets de dados 
