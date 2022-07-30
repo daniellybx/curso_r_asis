@@ -10,3 +10,12 @@ Ao final do curso o aluno estará apto a:
 - Criar mapas temáticos por meio da plataforma gráfica do R
 
 O repositório contém todos os scripts das aulas práticas. 
+
+## Ferramentas necessárias
+- R
+- RStudio
+
+## Estude com esse repositório
+````
+git clone https://github.com/daniellybx/curso_r_asis.git
+````
