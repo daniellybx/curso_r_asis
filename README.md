@@ -1,5 +1,7 @@
 # Curso Intermediário de R para Análise de Situação de Saúde
 
+Esse é o repositório original do "Curso Intermediário de R para Análise de Situação de Saúde", produzido em parceria com a Organização Panamericana da Saúde. 
+
 Curso de nível intermediário aplicando a linguagem R ao cotidiano da Vigilância em Saúde. 
 O curso foi dividido em 09 aulas, representados por aulas, teóricas e práticas, que abordam a vigilância em saúde da Covid-19 no Sistema Único de saúde, considerando o Sistema Nacional de Vigilância em Saúde e os protocolos e guias do Ministério da Saúde do Brasil e sua aplicação no R.
 
